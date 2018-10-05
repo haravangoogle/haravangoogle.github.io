@@ -27,13 +27,14 @@ $(document).ready(function () {
     $("#loading").show();
     var name = $('#name').val();
     var phone = $('#phone').val();
+    console.log('name , phone', name, phone);
     if (!name && !phone) return;
     else {
       $.post({
-        url: 'https://cors-anywhere.herokuapp.com/https://docs.google.com/forms/d/e/1FAIpQLSflkbXmiObI30IWeWOFujtBC7MhcvJ2eOWo7c9l0pe25byKIQ/formResponse',
+        url: 'https://cors-anywhere.herokuapp.com/https://docs.google.com/forms/d/e/1FAIpQLSd9d8ej72pyRotRHUQW41QELsKZADcfjlLwXVKymvOs2peXCA/formResponse',
         data: {
-          "entry.1637794751": phone,
-          "entry.945640530": name
+          "entry.1169530094": phone,
+          "entry.1739987128": name
         },
         headers: {
           // origin: 'haravanhn.github.io'
